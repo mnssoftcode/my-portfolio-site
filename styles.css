@@ -899,16 +899,17 @@ footer {
 
 .project-card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
     position: relative;
+    border: 1px solid rgba(124, 58, 237, 0.1);
 }
 
 .project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(124, 58, 237, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(124, 58, 237, 0.2);
 }
 
 .project-image {
@@ -928,39 +929,54 @@ footer {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .project-content h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: var(--h4-size);
+}
+
+.project-content p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: var(--p-size);
+    line-height: 1.6;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
 }
 
 .tag {
-    background-color: var(--section-bg);
-    padding: 0.3rem 0.8rem;
+    background-color: rgba(124, 58, 237, 0.1);
+    padding: 0.4rem 1rem;
     border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--text-color);
-    transition: all 0.3s ease;
+    font-size: var(--small-size);
+    color: var(--primary-color);
+    transition: var(--transition);
+    font-weight: 500;
 }
 
 .tag:hover {
     background-color: var(--primary-color);
     color: white;
+    transform: translateY(-2px);
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.project-links .btn {
+    flex: 1;
+    text-align: center;
 }
 
 /* Active Navigation Link */
@@ -991,6 +1007,5 @@ footer {
 
     .project-links .btn {
         width: 100%;
-        text-align: center;
     }
 } 
